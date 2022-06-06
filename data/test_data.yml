@@ -1,0 +1,61 @@
+test_data_login:
+ - {"account":17816108888,"userPassword":"59406454EA450777AD40F6516A2D19BF","nickName":"88888"}
+ - {"account":17816107777,"userPassword":"59406454EA450777AD40F6516A2D19BF","nickName":"发的"}
+ - {"account":17716101234,"userPassword":"59406454EA450777AD40F6516A2D19BF","nickName":"17716101234普通观众"}
+
+
+test_data_tag:
+  - [["1355746222291701762","1355746222300090370","1355746222312673281"],["02","10016042021042100016189959264689521624787366298"],{"resultCode": "SUCCESS"}]
+  - [["1355746222291701762","1355746222300090370","1355746222312673281"],["02","04"],{"resultCode": "SUCCESS"}]
+
+
+test_data_span_name:
+ - [1,'人员规模+成立年限']
+ - [2,'所有项都有了']
+ - [3,'成立年限']
+# - [4,'人员规模+年限+地区']
+# - [5,'注册资本+成立年限']
+# - [6,'融资+4个是']
+
+
+
+test_data_SINGLE_SELECT:
+  - {"label":"专利",'f':"is_patents"}
+  - {"label":"产品品牌",'f':"is_product_names"}
+  - {"label":"有移动电话",'f':"is_moblie"}
+  - {"label":"有邮箱",'f':"is_email"}
+
+  - {"label":"著作权",'f':"is_noml_copyrights" }
+  - {"label":"软件著作权",'f':"is_soft_copyrights"}
+  - {"label":"进出口信用",'f':"is_opr_cust_creditimport_export"}
+  - {"label":"有固定电话",'f':"is_phone"}
+
+  - {"label":"疑似有效电话",'f':"is_doubt"}
+  - {"label":"有商标",'f':"is_trademarks"}
+  - {"label":"有官网",'f':"is_home_url"}
+  - {"label":"是否代办企业",'f':"is_agency"}
+
+  - {"label":"园区企业",'f':"is_zone"}
+  - {"label":"失信信息",'f':"is_risk_legal_executions"}
+  - {"label":"A级纳税人",'f':"is_tier_a_taxpayer"}
+  - {"label":"是否空号",'f':"is_dead_num"}
+
+  - {"label":"网站备案",'f':"is_official"}
+  - {"label":"规模以上企业",'f':"is_above_scale"}
+
+  - {"label":"分支机构",'f':"is_branch"}
+  - {"label":"招聘信息",'f':"is_recruit"}
+  - {"label":"上市信息",'f':"is_public"}
+  - {"label":"对外投资",'f':"is_investment"}
+  - {"label":"招投标",'f':"is_opr_trd_biddings"}
+
+test_data_MULTIPLE_SELECT:
+  - {"label":"企业类型",'f':"bus_ent_type"}
+  - {"label":"注册资本",'f':"reg_cap_level"}
+  - {"label":"融资轮次",'f':"fin_type"}
+  - {"label":"成立年限",'f':"es_date_level"}
+  - {"label":"经营类型",'f':"ent_biz_type"}
+  - {"label":"企业实力",'f':"power_tag"}
+  - {"label":"经营状态",'f':"biz_status"}
+  - {"label":"人员规模",'f':"staff_size"}
+  - {"label":"资本类型",'f':"reg_cap_level"}
