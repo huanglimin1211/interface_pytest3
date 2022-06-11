@@ -2,13 +2,14 @@
 # -*- coding: UTF-8 -*-
 import os,sys,pytest,os,random,requests,json,allure
 import logging,jsonpath
-from out.log import Logger
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(BASE_DIR)
 from src.interface_get import Run_Main
 from util.read_yaml import ReadYaml
 from util.operate_json import  OperateJson
 from util.operate_excel import OperateExcel
+from out.log import Logger
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 # 禁用安全请求警告
