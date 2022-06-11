@@ -21,6 +21,15 @@ def test():
 
 
 
+def test_digital():
+    try:
+        float(s)
+        return True
+    except:
+        pass
+
+
+
 
 def test_01():
     time.sleep(2)
