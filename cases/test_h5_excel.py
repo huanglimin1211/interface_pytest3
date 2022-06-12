@@ -40,8 +40,6 @@ brandId="10014022021013100016120583171440000000000326917"
 
 
 
-
-
 @pytest.fixture(scope="module") #一个py文件只登陆一次
 def login():
     url=base_url+'/api/v2/app/login'

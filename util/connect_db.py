@@ -1,13 +1,15 @@
 #coding=utf-8
 import  pymysql
+dbconf = {"host": 'rm-bp1foe402p295lpmu7o.mysql.rds.aliyuncs.com',
+          "user": 'digital_expo_8_test',
+          "password": '0Cu68bc^3RM1Kp*F5cl0qOZRYCLfcy',
+          "database": 'digital_expo_test8'}
 
 class  ConnectDB():
-    def __init__(self):
-        #测试环境
-        self.con=pymysql.connect('rm-bp1foe402p295lpmu7o.mysql.rds.aliyuncs.com','digital_expo_8_test','0Cu68bc^3RM1Kp*F5cl0qOZRYCLfcy','digital_expo_test8')
-        #开发环境
-        # self.con = pymysql.connect('rm-bp1foe402p295lpmu7o.mysql.rds.aliyuncs.com', 'digital_expo_8_dev','K^bd1TLvcTq7dd@^UvgyRg6HH474Dh', 'digital_expo_dev8')
-        self.cursor = self.con.cursor()
+    def __init__(self,dbinfo=dbconf):#给定默认值，哈哈哈真不错
+        # dbinfo=('rm-bp1foe402p295lpmu7o.mysql.rds.aliyuncs.com','digital_expo_8_test','0Cu68bc^3RM1Kp*F5cl0qOZRYCLfcy','digital_expo_test8')
+        self.con=pymysql.connect(**dbinfo)
+        self.cursor=self.con.cursor()
 
 
     def search_one(self,sql):
